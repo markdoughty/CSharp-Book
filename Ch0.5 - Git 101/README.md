@@ -78,9 +78,9 @@ You can check which files are in the staging area, by using the ```status``` com
 $git status
 ```
 You should see an output like this, showing that ```file.txt``` is staged.
-![git status 01](/images/01.jpg)
+![git status 01](./images/01.jpg)
 
 If you edit ```file.txt``` to change it, and then do a ```$git status``` again, you should then see:
-![git status 02](/images/02.jpg)
+![git status 02](./images/02.jpg)
 This now shows there are two versions of ```file.txt``` - a tracked and untracked version. To apply the changes to the tracked version, do the ```$git add file.txt``` (or ```$git add .```) again.
 
