@@ -9,6 +9,7 @@
 3. [Staging the File](#staging)
 4. [Commiting the File](#commit)
 5. [Pushing the File](#push)
+6. [Branches and Code Review with git](#branches)
 
 ## Git?
 [Git](https://git-scm.com) is a version control system (VCS), which allows you to keep track of changes in files. It also coordinates the files and their changes among multiple people - a project team for example - or simply for yourself. Have a look at the [Pro Git](https://git-scm.com/book/en/v2) (Chacon and Straub, 2014) book to lift the lid on Git features.
@@ -141,3 +142,6 @@ $git push origin master
 ```
 
 What does this mean? ```push``` is a git command which takes the ```master``` (i.e. the main) branch of your local repository and pushes, or copies it to the ```origin``` remote (i.e. the one you set earlier).
+
+<a name="branches"></a>
+##### Branches and Code Review with git
