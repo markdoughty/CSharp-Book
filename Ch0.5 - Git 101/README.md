@@ -9,7 +9,7 @@
 3. [Staging the File](#staging)
 4. [Commiting the File](#commit)
 5. [Pushing the File](#push)
-6. [Branches and Code Review with git](#branches)
+6. [Forking a Repository](#fork)
 
 ## Git?
 [Git](https://git-scm.com) is a version control system (VCS), which allows you to keep track of changes in files. It also coordinates the files and their changes among multiple people - a project team for example - or simply for yourself. Have a look at the [Pro Git](https://git-scm.com/book/en/v2) (Chacon and Straub, 2014) book to lift the lid on Git features.
@@ -62,7 +62,7 @@ $git init
 ```
 You should then see confirmation that this folder is now a Git repository. If you also look in the folder, you should see a ```.git/``` folder containing all of the repository information for Git. 
 
-We have an empty directory, lets add a file. At the prompt, entr:
+We have an empty directory, lets add a file. At the prompt, enter:
 
 ```bash
 $touch file.txt
@@ -143,5 +143,15 @@ $git push origin master
 
 What does this mean? ```push``` is a git command which takes the ```master``` (i.e. the main) branch of your local repository and pushes, or copies it to the ```origin``` remote (i.e. the one you set earlier).
 
-<a name="branches"></a>
-##### Branches and Code Review with git
+<a name="fork"></a>
+##### Forking a Repository
+
+A ```fork``` is a copy of a repository that allows you to experiment with changes without affecting the original project. A forked repository differs from a clone in that a connection exists between your fork and the original repository itself. In this way, your fork acts as a bridge between the original repository and your copy where you can contribute back to the original project using a ```pull request```.
+
+###### When should I fork or clone a repo?
+
+(From toolsqa.com) Changes made to the forked repository can be merged with the original repository via a ```pull request```. A pull request alerts the repository owner and says "I have made some changes, please merge these changes to your repository if you like it". 
+
+On the other hand, changes made to a cloned repository on the local machine can be pushed to the upstream repository directly. For this, the user must have the write access to the repository otherwise this is not possible. If the user does not have write access, the only way to go is through the forked request. So in that case, the changes made in the cloned repository are first pushed to the forked repository and then a pull request is created. 
+
+It is a better option to ```fork``` before ```clone``` if the user is not declared as a contributor.
