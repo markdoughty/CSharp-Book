@@ -10,6 +10,7 @@
 4. [Commiting the File](#commit)
 5. [Pushing the File](#push)
 6. [Forking a Repository](#fork)
+7. [Git pull request workflow](#pr)
 
 ## Git?
 [Git](https://git-scm.com) is a version control system (VCS), which allows you to keep track of changes in files. It also coordinates the files and their changes among multiple people - a project team for example - or simply for yourself. Have a look at the [Pro Git](https://git-scm.com/book/en/v2) (Chacon and Straub, 2014) book to lift the lid on Git features.
@@ -155,3 +156,33 @@ A ```fork``` is a copy of a repository that allows you to experiment with change
 On the other hand, changes made to a cloned repository on the local machine can be pushed to the upstream repository directly. For this, the user must have the write access to the repository otherwise this is not possible. If the user does not have write access, the only way to go is through the forked request. So in that case, the changes made in the cloned repository are first pushed to the forked repository and then a pull request is created. 
 
 It is a better option to ```fork``` before ```clone``` if the user is not declared as a contributor.
+
+<a name="pr"></a>
+##### Git pull request workflow
+
+1. Fork the repo to your git account (only needs to be done once)
+2. ```Fetch Upstream``` to merge any changes in the original repo with your fork.
+3. Create a new branch to hold your changes
+4. Clone your repo to your computer.
+	Note: Clone only when you have write access (i.e. your repo). Use a ```pull request``` to send suggested changes to repo you have no write access for.
+	```bash
+	$git clone YOURUSERNAME/YOURFORKEDREPO
+	```
+5. 'Checkout' the new branch for editing
+	```bash
+	$cd YOURCLONEDREPO
+	$git checkout YOURNEWBRANCH
+	```
+6. Make changes to the clone on your computer.
+7. add, commit and push your changes to your repo.
+	```bash
+	$git add .
+	$git commit -m "a commit message here"
+	$git push origin YOURBRANCHNAME
+	```
+8. Check your forked repo is up to date with the original (```Fetch Upstream```) - resolve any merge conflicts.
+9. Open pull request to merge YOURFORKEDREPO/YOURNEWBRANCH into YOURFORKEDREPO/MASTER (Check this is the case)
+10. Merge.
+11. Open pull request to merge YOURFORKEDREPO/MASTER into ORIGINALREPO/DEV (Check this is the case)
+12. Pull request will then be received by the ORIGINALREPO and then considered to be added.
+13. You can now delete YOURNEWBRANCH.
