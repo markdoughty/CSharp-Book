@@ -41,10 +41,10 @@ It is easier if you don't want the footprint of an IDE on your computer to use o
 If you already have VS2019 and want to upgrade to VS2022, there are a number of improvements, mainly in performance and productivity. Have a look [here](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-now-available/) for more info.
 
 The first thing you will notice though, is how the editor looks when you create a new code project:
-![VS2022 01](./images/VS2022_1.png)
+![VS2022 01](./images/vs2022_1.png)
 
 If you want it to look more like your previous versions, then you can just replace that code with what you are used to:
-![VS2022 02](./images/VS2022_2.png)
+![VS2022 02](./images/vs2022_2.png)
 
 <a name="first"></a>
 #### First C# code
