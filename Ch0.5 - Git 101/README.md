@@ -186,3 +186,5 @@ It is a better option to ```fork``` before ```clone``` if the user is not declar
 11. Open pull request to merge YOURFORKEDREPO/MASTER into ORIGINALREPO/DEV (Check this is the case)
 12. Pull request will then be received by the ORIGINALREPO and then considered to be added.
 13. You can now delete YOURNEWBRANCH.
+
+##### Git Stuff
